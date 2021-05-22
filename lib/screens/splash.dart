@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:sbsc_todo_app/screens/temperature_view.dart';
+import '../home.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -14,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
         Duration(seconds: 3),
         () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (BuildContext context) => MyHomePage())));
+            builder: (BuildContext context) => Temperature())));
   }
 
   @override
@@ -22,13 +24,15 @@ class _SplashScreenState extends State<SplashScreen> {
     return Container(
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
-        //image: DecorationImage(image: AssetImage('assets/images/splash.png')
-      ),
-     child: Image.asset('assets/images/splash.png', fit: BoxFit.cover
+        image: DecorationImage(fit: BoxFit.cover, image: AssetImage('assets/images/splash.png')
+      ),),
+     child: Center(child: SpinKitPulse(color: Colors.white)),
+     
+    
+     
+      
      
      
-     
-     ,),
       
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sbsc_todo_app/splash.dart';
+import 'package:sbsc_todo_app/screens/splash.dart';
 
 void main() {
   runApp(MyApp());
