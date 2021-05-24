@@ -69,16 +69,6 @@ class WeatherResult extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                       color: Colors.white),
                 ),
-                // SizedBox(
-                //   height: 10,
-                // ),
-                // Text(
-                //   ' Saturday, May 22, 2021',
-                //   style: TextStyle(
-                //       fontSize: 15,
-                //       fontWeight: FontWeight.normal,
-                //       color: Colors.white),
-                // ),
                 SizedBox(
                   height: 30,
                 ),

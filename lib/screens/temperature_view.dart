@@ -45,35 +45,39 @@ class Temperature extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: MediaQuery.of(context).size.height /2.7,
+                      height: MediaQuery.of(context).size.height / 2.7,
                     ),
-
                     Center(
                         child: Text("TEAM EARTH",
                             style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w900))),
-                   Center(
+                    Center(
                         child: Text("Weather App",
                             style: TextStyle(
                                 fontSize: 50,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500))),
-                                Center(
+                    Center(
                         child: Text("Where Your Forecast Begins",
                             style: TextStyle(
                                 fontSize: 15,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w700))),
-SizedBox(height: 20),
-                                Center(
+                    SizedBox(height: 20),
+                    Center(
+                        child: GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AddLocation())),
                       child: Text("Click the 🔍 to begin ",
                           style: TextStyle(
                               fontSize: 15,
                               color: Colors.white,
-                              fontWeight: FontWeight.w900))),
-
+                              fontWeight: FontWeight.w900)),
+                    )),
                   ],
                 ),
               ),
