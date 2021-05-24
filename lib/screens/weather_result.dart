@@ -69,16 +69,16 @@ class WeatherResult extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                       color: Colors.white),
                 ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  ' Saturday, May 22, 2021',
-                  style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.white),
-                ),
+                // SizedBox(
+                //   height: 10,
+                // ),
+                // Text(
+                //   ' Saturday, May 22, 2021',
+                //   style: TextStyle(
+                //       fontSize: 15,
+                //       fontWeight: FontWeight.normal,
+                //       color: Colors.white),
+                // ),
                 SizedBox(
                   height: 30,
                 ),
@@ -158,7 +158,7 @@ class WeatherResult extends StatelessWidget {
                                       children: [
                                         TextSpan(
                                           text:
-                                              'It will be Rainy 🧥 and 🌂',
+                                              'It will be Sunny',
                                           style: h2Text,
                                         )
                                       ],
@@ -167,7 +167,7 @@ class WeatherResult extends StatelessWidget {
                                       children: [
                                         TextSpan(
                                           text:
-                                              'It will be hot need 🧥 and 🌂',
+                                              'It will be hot you need 🌂',
                                           style: h2Text,
                                         )
                                       ],
